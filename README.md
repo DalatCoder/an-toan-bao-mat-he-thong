@@ -65,3 +65,16 @@ Có 1 số công cụ dùng cho việc tấn công SQL Injection, có thể kể
 ### 5. Cách phát hiện
 
 ### 6. Biện pháp phòng chống
+Bởi vì các cuộc tấn công SQLi rất phổ biến, gây tổn hại và thường xuyên thay đổi cả về phương thức lẫn kiểu tấn công, một biện pháp đối phó là không đủ. Thay vào đó, cần có một bộ kỹ thuật tích hợp. Một số biện pháp phòng chống có thể kể đến như:
+- Kỹ thuật mã hóa phòng vệ thủ công
+- Sử dụng các tham số trong truy vấn
+- SQL DOM
+
+#### 6.1 Kỹ thuật mã hóa phòng vệ thủ công
+Một lỗ hổng phổ biến được khai thác bởi các cuộc tấn công SQLi là không xác thực đầu vào. Giải pháp đơn giản để loại bỏ các lỗ hổng này là áp dụng các kỹ thuật mã hóa phòng thủ phù hợp. Một ví dụ là kiểm tra kiểu đầu vào có phải là chuỗi chỉ chứa các ký số hay không. Loại kỹ thuật này có thể tránh các cuộc tấn công dựa trên các lỗi ràng buộc trong hệ quản trị cơ sở dữ liệu. Một kỹ thuật khác là thực hiện so khớp mẫu để cố gắng phân biệt đầu vào bình thường với đầu vào bất thường.
+
+#### 6.2 Sử dụng các tham số trong truy vấn
+Cách tiếp cận này cố gắng ngăn SQLi bằng cách cho phép nhà phát triển ứng dụng xác định chính xác hơn cấu trúc của truy vấn SQL và truyền các tham số giá trị cho nó một cách riêng biệt sao cho mọi đầu vào của người dùng không được phép sửa đổi cấu trúc truy vấn.
+
+#### 6.3 SQL DOM
+SQL DOM là một tập hợp các lớp cho phép tự động xác thực kiểu dữ liệu và thoát. Cách tiếp cận này đóng gói các truy vấn cơ sở dữ liệu nhằm cung cấp một cách an toàn và đáng tin cậy để truy cập cơ sở dữ liệu. Điều này thay đổi quy trình xây dựng truy vấn thay vì quy trình không được kiểm soát như trước đây bằng cách sử dụng một hệ thống API để kiểm tra kiểu. Trong API, các nhà phát triển có thể áp dụng một cách có hệ thống các kỹ thuật tốt nhất để lọc đầu vào và kiểm tra nghiêm ngặt kiểu dữ liệu của đầu vào của người dùng.
