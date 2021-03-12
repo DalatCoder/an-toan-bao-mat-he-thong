@@ -27,7 +27,6 @@ Kẻ tấn công dựa vào thông báo lỗi phản hồi từ máy chủ cơ s
 Kĩ thuật tiêm nhiễm SQL dựa trên thông báo lỗi lại bao gồm rất nhiều kĩ thuật con, có thể kể đến như:
 - System Store Procedure
 - End of line comment
-- Illegal / Logically incorrect query
 - Tautology
 
 ##### 2.1.2 Tiêm nhiễm SQL dựa trên câu lệnh UNION
