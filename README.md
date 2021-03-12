@@ -39,6 +39,17 @@ UNION
 SELECT <column_name(s)> FROM <table_2>;
 ```
 
+#### 2.2 Kĩ thuật tiêm nhiễm theo suy luận (Tiêm nhiễm mù)
+Với kĩ thuật tấn công này, thực tế không có việc truyền dữ liệu từ ứng dụng web. Do đó, hacker không thể xem kết quả trực tiếp từ cuộc tấn công, chính vì thế mà nó được gọi với tên khác là "Kĩ thuật tiêm nhiễm mù". Tuy nhiên, kẻ tấn công vẫn có thể xây dựng lại thông tin bằng cách gửi các yêu cầu cụ thể và quan sát hành vi phản hồi của máy chủ trang web/cơ sở dữ liệu. Các kiểu tấn công suy diễn có thể kể đến như:
+- Truy vấn bất hợp pháp/không đúng logic
+- Tiêm SQL mù
+
+#### 2.2.1 Truy vấn bất hợp pháp/không đúng logic
+Cuộc tấn công này cho phép kẻ tấn công thu thập thông tin quan trọng về loại và cấu trúc của cơ sở dữ liệu đằng sau ứng dụng Web. Cuộc tấn công được coi là bước đầu tiên, thu thập thông tin cho các cuộc tấn công khác. Lỗ hổng được khai thác bởi cuộc tấn công này là trang lỗi mặc định được trả về bởi các máy chủ ứng dụng thường được mô tả quá chi tiết. Trong thực tế, một thông báo lỗi được tạo ra thường có thể tiết lộ các thông số dễ bị tổn thương, có thể bị lợi dụng bởi kẻ tấn công.
+
+#### 2.2.2 Tiêm SQL mù
+Tiêm SQL mù cho phép kẻ tấn công suy ra dữ liệu có trong hệ thống cơ sở dữ liệu ngay cả khi hệ thống đủ an toàn để không hiển thị bất kỳ thông tin sai sót nào cho kẻ tấn công. Kẻ tấn công hỏi máy chủ câu hỏi dạng đúng/sai. Nếu câu lệnh được đánh giá là đúng, trang web sẽ tiếp tục hoạt động bình thường. Nếu câu lệnh là sai, mặc dù không có thông báo lỗi mô tả, trang web sẽ khác đáng kể so với trang hoạt động bình thường.
+
 ### 3. Một số công cụ
 Có 1 số công cụ dùng cho việc tấn công SQL Injection, có thể kể đến như:
 - BSQL Hacker
