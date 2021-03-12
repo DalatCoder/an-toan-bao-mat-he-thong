@@ -5,7 +5,8 @@
 ### 2. Kỹ thuật tấn công
 ### 3. Mội số công cụ tấn công
 ### 4. Demo thực tế
-### 5. Cách phát hiện và phòng chống
+### 5. Cách phát hiện
+### 6. Biện pháp phòng chống
 
 ### 1. Giới thiệu
 - SQL viết tắt của Structural Query Language, là ngôn ngữ truy vấn có cấu trúc, được chuẩn hóa và sử dụng để định nghĩa lược đồ cơ sở dữ liệu, thao tác và truy vấn dữ liệu trong cơ sở dữ liệu quan hệ.
@@ -58,3 +59,9 @@ Có 1 số công cụ dùng cho việc tấn công SQL Injection, có thể kể
 - Marathon Tool
 - SQL Power Injector
 - Havij
+
+### 4. Demo thực tế
+
+### 5. Cách phát hiện
+
+### 6. Biện pháp phòng chống
