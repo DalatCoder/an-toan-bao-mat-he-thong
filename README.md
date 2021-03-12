@@ -43,11 +43,14 @@ Với kĩ thuật tấn công này, thực tế không có việc truyền dữ 
 - Truy vấn bất hợp pháp/không đúng logic
 - Tiêm SQL mù
 
-#### 2.2.1 Truy vấn bất hợp pháp/không đúng logic
+##### 2.2.1 Truy vấn bất hợp pháp/không đúng logic
 Cuộc tấn công này cho phép kẻ tấn công thu thập thông tin quan trọng về loại và cấu trúc của cơ sở dữ liệu đằng sau ứng dụng Web. Cuộc tấn công được coi là bước đầu tiên, thu thập thông tin cho các cuộc tấn công khác. Lỗ hổng được khai thác bởi cuộc tấn công này là trang lỗi mặc định được trả về bởi các máy chủ ứng dụng thường được mô tả quá chi tiết. Trong thực tế, một thông báo lỗi được tạo ra thường có thể tiết lộ các thông số dễ bị tổn thương, có thể bị lợi dụng bởi kẻ tấn công.
 
-#### 2.2.2 Tiêm SQL mù
+##### 2.2.2 Tiêm SQL mù
 Tiêm SQL mù cho phép kẻ tấn công suy ra dữ liệu có trong hệ thống cơ sở dữ liệu ngay cả khi hệ thống đủ an toàn để không hiển thị bất kỳ thông tin sai sót nào cho kẻ tấn công. Kẻ tấn công hỏi máy chủ câu hỏi dạng đúng/sai. Nếu câu lệnh được đánh giá là đúng, trang web sẽ tiếp tục hoạt động bình thường. Nếu câu lệnh là sai, mặc dù không có thông báo lỗi mô tả, trang web sẽ khác đáng kể so với trang hoạt động bình thường.
+
+#### 2.3 Kĩ thuật tấn công ngoài băng
+Đây là kĩ thuật sử dụng các kênh khác nhau để tiến hành cuộc tấn công và thu thập các phản hồi. Để có thể tấn công, kĩ thuật này yêu cầu 1 số tính năng phải được kích hoạt sẵn, ví dụ như DNS hoặc yêu cầu HTTP đến máy chủ cơ sở dữ liệu. Chính vì phải thõa mãn các yêu cầu trước khi tấn công nên kĩ thuật này không được phổ biến.
 
 ### 3. Một số công cụ
 Có 1 số công cụ dùng cho việc tấn công SQL Injection, có thể kể đến như:
