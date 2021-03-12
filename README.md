@@ -39,7 +39,7 @@ UNION
 SELECT <column_name(s)> FROM <table_2>;
 ```
 
-#### 2.2 Kĩ thuật tiêm nhiễm theo suy luận (Tiêm nhiễm mù)
+#### 2.2 Kĩ thuật tấn công suy luận
 Với kĩ thuật tấn công này, thực tế không có việc truyền dữ liệu từ ứng dụng web. Do đó, hacker không thể xem kết quả trực tiếp từ cuộc tấn công, chính vì thế mà nó được gọi với tên khác là "Kĩ thuật tiêm nhiễm mù". Tuy nhiên, kẻ tấn công vẫn có thể xây dựng lại thông tin bằng cách gửi các yêu cầu cụ thể và quan sát hành vi phản hồi của máy chủ trang web/cơ sở dữ liệu. Các kiểu tấn công suy diễn có thể kể đến như:
 - Truy vấn bất hợp pháp/không đúng logic
 - Tiêm SQL mù
