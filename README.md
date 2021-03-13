@@ -7,6 +7,7 @@
 ### 4. Demo thực tế
 ### 5. Cách phát hiện
 ### 6. Biện pháp phòng chống
+### 7. Tài liệu tham khảo
 
 ### 1. Giới thiệu
 - SQL viết tắt của Structural Query Language, là ngôn ngữ truy vấn có cấu trúc, được chuẩn hóa và sử dụng để định nghĩa lược đồ cơ sở dữ liệu, thao tác và truy vấn dữ liệu trong cơ sở dữ liệu quan hệ.
@@ -78,3 +79,7 @@ Cách tiếp cận này cố gắng ngăn SQLi bằng cách cho phép nhà phát
 
 #### 6.3 SQL DOM
 SQL DOM là một tập hợp các lớp cho phép tự động xác thực kiểu dữ liệu và thoát. Cách tiếp cận này đóng gói các truy vấn cơ sở dữ liệu nhằm cung cấp một cách an toàn và đáng tin cậy để truy cập cơ sở dữ liệu. Điều này thay đổi quy trình xây dựng truy vấn thay vì quy trình không được kiểm soát như trước đây bằng cách sử dụng một hệ thống API để kiểm tra kiểu. Trong API, các nhà phát triển có thể áp dụng một cách có hệ thống các kỹ thuật tốt nhất để lọc đầu vào và kiểm tra nghiêm ngặt kiểu dữ liệu của đầu vào của người dùng.
+
+### 7. Tài liệu tham khảo
+- Sách CEH v10 Complete Training Guide With Labs
+- Computer Security Principles and Practice (Fourth edition)
