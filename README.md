@@ -14,6 +14,15 @@
 - Các câu lệnh SQL có thể được sử dụng để tạo các bảng, chèn và xóa dữ liệu trong các bảng, tạo các khung nhìn và truy xuất dữ liệu bằng các câu lệnh truy vấn.
 - SQL Injection là 1 kĩ thuật tấn công phổ biến và phức tạp. Đối tượng được nhắm đến là các ứng dụng web, chương trình máy tính và cả cơ sở dữ liệu. Kĩ thuật này yêu cầu người thực hiện phải am hiểu sâu sắc về luồng xử lý của 1 ứng dụng web và các thành phần cấu thành nó, bao gồm cơ sở dữ liệu và SQL. Về cơ bản, kĩ thuật tấn công này tiêm nhiễm 1 đoạn mã hoặc 1 đoạn kịch bản nguy hiểm nhằm khai thác lỗ hổng bảo mật xảy ra trong tầng cơ sở dữ liệu của một ứng dụng (chẳng hạn như các truy vấn). Bằng cách tiêm nhiễm vào lệnh SQL, kẻ tấn công có thể trích xuất hoặc thao tác dữ liệu của ứng dụng web.
 
+Một số báo cáo thực tế:
+- Báo cáo tấn công vào ứng dụng web của Imperva tháng 7 năm 2013 đã khảo sát một loạt các máy chủ ứng dụng Web chuyên dụng và theo dõi tám loại tấn công phổ biến khác nhau. Báo cáo cho thấy các cuộc tấn công SQLi xếp thứ nhất hoặc thứ hai theo các tiêu chí: tổng số các sự cố bị tấn công, số lượng yêu cầu tấn công với mỗi sự cố tấn công và số ngày trung bình trên mỗi tháng mà một ứng dụng trải qua ít nhất một sự cố tấn công. Imperva đã quan sát một trang web đặc biệt nhận được 94.057 yêu cầu tấn công SQL injection chỉ trong một ngày
+
+- Báo cáo Dự án Bảo mật Ứng dụng Web Mở 2013 về 10 rủi ro bảo mật ứng dụng Web quan trọng nhất đã liệt kê các cuộc tấn công tiêm chích, đặc biệt là các cuộc tấn công SQLi, là rủi ro hàng đầu. Bảng xếp hạng này không thay đổi so với báo cáo năm 2010.
+
+- Báo cáo bảo mật phần mềm Veracode 2016 cho thấy tỷ lệ phần trăm các ứng dụng bị ảnh hưởng bởi các cuộc tấn công SQLi là khoảng 35%.
+
+- Báo cáo bảo mật toàn cầu của Trustwave 2016 liệt kê các cuộc tấn công SQLi là một trong hai kỹ thuật xâm nhập hàng đầu. Báo cáo lưu ý rằng SQLi có thể gây ra mối đe dọa đáng kể cho dữ liệu nhạy cảm như thông tin nhận dạng cá nhân (Personal Identifiable Information - PII) và dữ liệu thẻ tín dụng. Dạng tấn công này tương đối dễ dàng trong việc triển khai để khai thác thông tin nhưng khó ngăn chặn
+
 ### 2. Các kỹ thuật tấn công
 1. In-band SQLi
 2. Inferential SQLi
